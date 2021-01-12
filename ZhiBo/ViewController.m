@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import <IJKMediaFramework/IJKMediaFramework.h>
 
 @interface ViewController ()
 
@@ -16,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    IJKFFMoviePlayerController *player;
 }
 
 

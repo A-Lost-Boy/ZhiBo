@@ -16,6 +16,7 @@
 		83CAF28425AD55A70088A028 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CAF28325AD55A70088A028 /* main.m */; };
 		83CAF28E25AD55A70088A028 /* ZhiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CAF28D25AD55A70088A028 /* ZhiBoTests.m */; };
 		83CAF29925AD55A70088A028 /* ZhiBoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CAF29825AD55A70088A028 /* ZhiBoUITests.m */; };
+		83CAF2FE25AD8B310088A028 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CAF2FD25AD8B310088A028 /* IJKMediaFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		83CAF29425AD55A70088A028 /* ZhiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CAF29825AD55A70088A028 /* ZhiBoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiBoUITests.m; sourceTree = "<group>"; };
 		83CAF29A25AD55A70088A028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CAF2FD25AD8B310088A028 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CAF2FE25AD8B310088A028 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +107,7 @@
 		83CAF27025AD55A60088A028 /* ZhiBo */ = {
 			isa = PBXGroup;
 			children = (
+				83CAF2FC25AD8B260088A028 /* IJKMediaFramework */,
 				83CAF27125AD55A60088A028 /* AppDelegate.h */,
 				83CAF27225AD55A60088A028 /* AppDelegate.m */,
 				83CAF27425AD55A60088A028 /* SceneDelegate.h */,
@@ -135,6 +139,14 @@
 				83CAF29A25AD55A70088A028 /* Info.plist */,
 			);
 			path = ZhiBoUITests;
+			sourceTree = "<group>";
+		};
+		83CAF2FC25AD8B260088A028 /* IJKMediaFramework */ = {
+			isa = PBXGroup;
+			children = (
+				83CAF2FD25AD8B310088A028 /* IJKMediaFramework.framework */,
+			);
+			path = IJKMediaFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +454,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZhiBo/IJKMediaFramework",
+				);
 				INFOPLIST_FILE = ZhiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +475,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZhiBo/IJKMediaFramework",
+				);
 				INFOPLIST_FILE = ZhiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
